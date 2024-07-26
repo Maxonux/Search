@@ -17,7 +17,7 @@ app.post('/process_post', urlencodedParser, function(req, res)
 	exec(`grep -rl ${search} data`, function(err, stdout, stderr) {
 	console.log(stdout);
 	let response = stdout.replace('\n','<br>')
-	response = `Файлы в которых упоминается слово '${search}':<br><br>${response}`;
+	response = `Файлы в которых упоминается слово '${search}':<br>${response}`;
 	res.send(response);
 	})	
 })

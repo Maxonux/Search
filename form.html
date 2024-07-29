@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="scripts/main.js">
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <title>ArchiveSearch</title>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+   <title>ArhiveSearch</title>
 </head>
 <body>
+   
+      <header>
+         <h1>ArhiveSearch</h1>
+      </header>
 
-   <form action = "http://127.0.0.1:8080/process_post" method = "POST">
-      Запрос: <input type = "text" name = "search">  <br>
-      <input type = "submit" value = "Поиск">
-   </form>
+      <div class="JSForm">
+         <form action = "http://127.0.0.1:8080/process_post" method = "POST">
+            Запрос: <input type = "text" name = "search" size="50">  <br>
+            <input type = "submit" value = "Поиск">
+         </form>
+      </div>
+
+      <div class="OutPut">
+
+      </div>
 
 </body>
 </html>
+
+<style>
+
+header {
+   width: 100%;
+   height: 50px;
+   padding: 10px;
+
+}  
+h1 {
+   text-align: center;
+}
+body {
+   background-color: aliceblue;
+   width: 100%;
+   height: 100%;
+   margin: 0px;
+   padding: 20px;
+}
+.JSFORM {
+   text-align: center;
+   width: 100%;
+   height: 200px;
+   margin: 80px;
+   padding: 80px;
+   background-color: blue;
+}
+
+</style>
